@@ -1,0 +1,113 @@
+create table payment (
+
+paymentID int not null,
+username varchar(50) not null,
+userID varchar(50) not null,
+pay_method varchar(50) not null,
+amount varchar(50) not null,
+date date not null,
+
+constraint payment_PK primary key (paymentID),
+
+
+
+);
+
+create table customer(
+
+customerID int not null,
+Fname varchar(20) not null,
+Lname varchar(20) not null,
+email varchar(20) not null,
+password  varchar(10) not null,
+age int not null,
+address varchar(20) not null,
+contact_num int not null,
+
+constraint customer_PK primary key (customerID),
+
+
+
+);
+
+create table land(
+
+land_number int not null,
+land_price int not null,
+land_perch int not null,
+land_location varchar(20) not null,
+
+constraint land_PK primary key (land_number),
+
+
+);
+
+create table admin_(
+
+adminID int not null,
+Fname varchar(20) not null,
+Lname varchar(20) not null,
+contact_num int not null,
+email varchar(20) not null,
+password varchar(20) not null,
+
+constraint admin_PK primary key (adminID),
+
+);
+
+create table legal_document(
+
+deed_no int not null,
+date  date not null,
+Reg_number int not null,
+Purachase_price int not null,
+
+
+);
+
+create table seller(
+
+sellerId int not null,
+Fname varchar(20) not null,
+Lname varchar(20) not null,
+email varchar not null,
+password varchar(20) not null,
+address varchar(50) not null,
+contact_num int not null,
+
+
+);
+
+create table emplyee(
+
+emplyeeID int not null,
+Fname varchar(20) not null,
+Lname varchar(20) not null,
+address varchar(50) not null,
+contact_num int not null,
+
+
+
+);
+
+create table feedback(
+
+feedback_num int not null,
+feedback_discription varchar not null,
+
+
+);
+
+
+
+insert into payment values(1,'dasun','dasun2001','cash','RS:100000/=','10/06/2023')
+insert into payment values(2,'nimal','nimal2002','cash','RS:300000/=','12/07/2023')
+insert into payment values(3,'kasun','kasun2000','cheque','RS:500000/=','13/07/2023')
+insert into payment values(4,'isuru','isuru2001','cash','RS:200000/=','19/07/2023')
+insert into payment values(5,'kavi','kavi1999','cash','Rs:1000000/=','20/07/2023')
+
+insert into customer values()
+
+
+select * from payment
+drop table payment

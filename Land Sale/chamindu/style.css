@@ -1,0 +1,281 @@
+/*head styling*/
+.head {
+    background-color: rgb(49, 196, 56);
+    opacity: 70%;
+    font-size: 1vw;
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/*div class styling*/
+#logo{
+    float: left;
+}
+
+#login{
+    float: right;
+}
+
+#note{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 1000;
+    color: white;
+}
+/*navi bar*/
+ul#navi{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #124b04;
+    font-size: 1vw;
+}
+
+li#navi{
+    float: left;
+}
+
+li a{
+    color: rgb(240, 246, 247);
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    padding: 12px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+li a:hover{
+    background-color: rgb(22, 22, 21);
+}
+
+li a.active{
+    background-color: #2196F3;
+    color: white;
+}
+
+#navi input[type=text]{
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 6px;
+    margin-bottom: 3px;
+    border: nonenavi;
+    font-size: 15px;
+}
+
+@media screen and(max-width : 600px){
+    #navi a,#navi input[type = text]{
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    #navi input[type=text]{
+        border: 1px solid white;
+    }
+    
+}
+
+.formbold-mb-5 {
+	margin-bottom: 20px;
+}
+
+.formbold-pt-3 {
+	padding-top: 12px;
+}
+
+.formbold-main-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 48px;
+}
+
+.formbold-form-wrapper {
+	margin: 0 auto;
+	max-width: 550px;
+	width: 100%;
+	background: white;
+}
+
+.formbold-form-label {
+	display: block;
+	font-weight: 500;
+	font-size: 16px;
+	color: #07074d;
+	margin-bottom: 12px;
+}
+
+.formbold-form-label-2 {
+	font-weight: 600;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.formbold-form-input {
+	width: 100%;
+	padding: 12px 24px;
+	border-radius: 6px;
+	border: 1px solid #e0e0e0;
+	background: white;
+	font-weight: 500;
+	font-size: 16px;
+	color: #6b7280;
+	outline: none;
+	resize: none;
+}
+
+	.formbold-form-input:focus {
+		border-color: #6a64f1;
+		box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+	}
+
+.formbold-btn {
+	text-align: center;
+	font-size: 16px;
+	border-radius: 6px;
+	padding: 14px 32px;
+	border: none;
+	font-weight: 600;
+	background-color: #6a64f1;
+	color: white;
+	width: 100%;
+	cursor: pointer;
+}
+
+	.formbold-btn:hover {
+		box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+	}
+
+.formbold--mx-3 {
+	margin-left: -12px;
+	margin-right: -12px;
+}
+
+.formbold-px-3 {
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.w-full {
+	width: 100%;
+}
+
+@media (min-width: 540px) {
+	.sm\:w-half {
+		width: 50%;
+	}
+}
+
+/*  senter box*/
+fieldset{
+    margin: 500px;
+     margin-top: -400px;
+    
+    
+    }
+
+	/*footer styling*/
+footer {
+    background-color: rgb(3, 75, 3);
+    opacity: 70%;
+    height: 220px;
+    padding: 0; 
+    font-size: 1vw;
+    margin: 0; 
+    width: 100%;
+}
+
+.first{
+    color: white;
+    float: left;
+}
+
+.second{
+    color: white;
+    float: none;
+    margin-left: 500px;
+    text-decoration: none;
+}
+
+.third{
+    color: white;
+    float: right;
+}
+
+h5{
+  font-size: 1vw;
+}
+
+.foot{
+  text-decoration: none;
+  color: white;
+}
+
+.fa{
+  padding: 10px;
+  font-size: 30px;
+  width: 23px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover{
+  opacity: 0.7s;
+}
+
+.fa-facebook{
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter{
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: rgb(216, 17, 183);
+  color: white;
+}
+
+iframe{
+
+	margin: 50px;
+	margin-top: 0px;
+
+
+
+}
+.t1 {
+
+	margin:50px;
+	margin-top: 10px;
+	background-color: #f2f2f2 ;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

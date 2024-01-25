@@ -1,0 +1,147 @@
+create table payment (
+
+paymentID int not null,
+username varchar(50) not null,
+userID varchar(50) not null,
+pay_method varchar(50) not null,
+amount varchar(50) not null,
+date date not null,
+
+constraint payment_PK primary key (paymentID),
+
+
+
+);
+
+create table customer(
+
+customerID int not null,
+Fname varchar(20) not null,
+Lname varchar(20) not null,
+email varchar(20) not null,
+password  varchar(10) not null,
+age int not null,
+address varchar(20) not null,
+contact_num int not null,
+
+constraint customer_PK primary key (customerID),
+
+
+
+);
+
+create table land(
+
+land_number int not null,
+land_price int not null,
+land_perch int not null,
+land_location varchar(20) not null,
+
+constraint land_PK primary key (land_number),
+
+
+);
+
+create table admin_(
+
+adminID int not null,
+Fname varchar(20) not null,
+Lname varchar(20) not null,
+contact_num int not null,
+email varchar(20) not null,
+password varchar(20) not null,
+
+constraint admin_PK primary key (adminID),
+
+);
+
+create table legal_document(
+
+deed_no int not null,
+date  date not null,
+Reg_number int not null,
+Purachase_price int not null,
+
+
+);
+
+create table seller(
+
+sellerId int not null,
+Fname varchar(20) not null,
+Lname varchar(20) not null,
+email varchar not null,
+password varchar(20) not null,
+address varchar(50) not null,
+contact_num int not null,
+
+
+);
+
+create table emplyee(
+
+emplyeeID int not null,
+Fname varchar(20) not null,
+Lname varchar(20) not null,
+address varchar(50) not null,
+contact_num int not null,
+
+
+
+);
+
+create table feedback(
+
+feedback_num int not null,
+feedback_discription varchar not null,
+
+
+);
+
+
+
+insert into payment values(101,'dasun','dasun2001','cash','RS:100000/=','10/06/2023')
+insert into payment values(102,'nimal','nimal2002','cash','RS:300000/=','12/07/2023')
+insert into payment values(103,'kasun','kasun2000','cheque','RS:500000/=','13/07/2023')
+insert into payment values(104,'isuru','isuru2001','cash','RS:200000/=','19/07/2023')
+insert into payment values(105,'kavi','kavi1999','cash','RS:1000000/=','20/07/2023')
+
+insert into customer values(2301,'dasun','dhananjaya','dasundhananjaya888@gmail.com',2002350,22,'78/5 mudduwa road,rathnaputa',0702045513)
+insert into customer values(2302,'tharidu','imalka','thariduimalka@gmail.com',2002351,24,'23/4 new kandy road,malbe',0718160066)
+insert into customer values(2303,'nipun','kosala','nipunkosala@gmail.com',2002356,26,'20/3 muwagama,rathnapura',0719904222)
+insert into customer values(2304,'janith','kalhara','janithkalhara@gmail.com',2002369,20,'47/6 kothalawala,kaduwela',0702046534)
+insert into customer values(2305,'matheesha kaveeen','matheeshakaveen@gmail.com',2002370,22,'34/A bopitiya,pelmadulla',0711849209)
+
+insert into land values(1001,'Rs:300000',2,'34/5 pittugala,malabe')
+insert into land values(1002,'Rs:500000',4,'30/8 kothalawala,kaduwela')
+insert into land values(1003,'Rs:600000',5,'32/1  muwagama ,rathnapura')
+insert into land values(1004,'Rs:1000000',10,'22/5 ganegama,pelmadulla')
+insert into land values(1005,'Rs:2300000',14,'34A/6 wabada west,wabada')
+
+
+insert into admin_ values(001,'malidu','dhananjaya',0703334441,'malidudhananjaya222@gmail.com',345671)
+insert into admin_ values(002,'manula','sampath',0703322221,'manulasampath@gmail.com',345673)
+insert into admin_ values(003,'kamal','nayanajith',0704567821,'kamalnayanajith@gmail.com',345674)
+insert into admin_ values(004,'amila','pranandu',0703344432,'amilapranandu@gmail.com',345676)
+insert into admin_ values(002,'isuri','numasha',0734598221,'isurinumasha@gmail.com',345678)
+
+
+insert into legal_document values(10003,'9/10/2023',1201,'Rs.2000000')
+insert into legal_document values(10004,'10/10/2023',1202,'Rs.5000000')
+insert into legal_document values(10005,'11/10/2023',1203,'Rs.6000000')
+insert into legal_document values(10006,'12/10/2023',1204,'Rs.3000000')
+insert into legal_document values(10007,'13/10/2023',1205,'Rs.7000000')
+
+
+insert into seller values(501,'nimal','pranandu','nimalpranandu@gmail.com',2345001,'34/5 pittugala,malabe',0719004433)
+insert into seller values(501,'isuru','dhananjaya','isurudhananjaya@gmail.com',2345002,'32/1  muwagama ,rathnapura',0719002222)
+insert into seller values(501,'amaya','numali','amaya nimali@gmail.com',2345003,'34A/6 wabada west,wabada',0719033333)
+insert into seller values(501,'nawoda','nirmani','nawodanirmani@gmail.com',2345004,'22/5 ganegama,pelmadulla',0719004567)
+insert into seller values(501,'shanuka','akilesh','shanukaakilesh@gmail.com',2345005,'34/5 pittugala,malabe',0719004567)
+
+insert into emplyee values(3001,'kamal','akilesh','34/5 pittugala,kaduwela',0718166055)
+insert into emplyee values(3001,'naduni','gayani','4/5 waliwita roda,kaduwela',0718166044)
+insert into emplyee values(3001,'numali','nawoda','201/4 abagama,rathnapura',0718164445)
+insert into emplyee values(3001,'daduni','numesha','39A/5 mudduwa road,gampaha',0718166111)
+insert into emplyee values(3001,'dasun','dhananjaya','34/5 new road,mathugama',0718166890)
+
